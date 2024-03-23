@@ -6,6 +6,7 @@ import { Container } from '../components/Container';
 import { Flex } from '../components/Flex';
 import { Footer } from '../components/Footer';
 import { Color, Space } from '../styles/variables';
+import { memo } from 'react';
 
 const _Header = styled.header`
   padding: ${Space * 2}px;
@@ -17,7 +18,7 @@ type Props = {
   rightContent?: React.ReactNode;
 };
 
-export const ActionLayout: React.FC<Props> = ({ leftContent, rightContent }) => {
+export const ActionLayout: React.FC<Props> =  memo(({ leftContent, rightContent }) => {
   return (
     <Container>
       <_Header>
@@ -34,4 +35,4 @@ export const ActionLayout: React.FC<Props> = ({ leftContent, rightContent }) => 
       <Footer />
     </Container>
   );
-};
+});

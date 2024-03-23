@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { memo } from 'react';
 import { useBoolean, useMount } from 'react-use';
 import styled from 'styled-components';
 
@@ -14,7 +14,7 @@ type Props = {
   width?: number;
 };
 
-export const Spacer: React.FC<Props> = ({ height, width }) => {
+export const Spacer: React.FC<Props> = memo(({ height, width }) => {
   const [mounted, toggleMounted] = useBoolean(false);
 
   useMount(() => {
@@ -22,4 +22,4 @@ export const Spacer: React.FC<Props> = ({ height, width }) => {
   });
 
   return mounted ? <_Spacer $height={height} $width={width} /> : null;
-};
+});

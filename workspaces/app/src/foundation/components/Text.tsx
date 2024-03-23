@@ -1,5 +1,5 @@
 import type * as CSS from 'csstype';
-import React from 'react';
+import React, { memo } from 'react';
 import styled from 'styled-components';
 
 import type { Color, Typography } from '../styles/variables';
@@ -29,7 +29,7 @@ type Props = {
   weight?: 'bold' | 'normal';
 };
 
-export const Text: React.FC<Props> = ({
+export const Text: React.FC<Props> = memo(({
   as,
   children,
   color,
@@ -52,4 +52,4 @@ export const Text: React.FC<Props> = ({
       {children}
     </_Text>
   );
-};
+});

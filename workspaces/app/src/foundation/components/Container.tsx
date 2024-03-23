@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { memo } from 'react';
 import styled from 'styled-components';
 
 import { BreakPoint, Color } from '../styles/variables';
@@ -20,6 +20,6 @@ type Props = {
   children: React.ReactNode;
 };
 
-export const Container: React.FC<Props> = ({ children }) => {
+export const Container: React.FC<Props> = memo(({ children }) => {
   return <_Container>{children}</_Container>;
-};
+});

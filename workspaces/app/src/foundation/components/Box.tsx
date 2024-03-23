@@ -1,5 +1,5 @@
 import type * as CSS from 'csstype';
-import type { AriaAttributes } from 'react';
+import { memo, type AriaAttributes } from 'react';
 import styled from 'styled-components';
 
 import { addUnitIfNeeded } from '../../lib/css/addUnitIfNeeded';
@@ -104,7 +104,7 @@ type Props = {
   width?: number | string;
 };
 
-export const Box: React.FC<Props> = ({
+export const Box: React.FC<Props> = memo(({
   ['aria-label']: ariaLabel,
   ['aria-labelledby']: ariaLabelledBy,
   as,
@@ -181,4 +181,4 @@ export const Box: React.FC<Props> = ({
       {children}
     </_Box>
   );
-};
+});
