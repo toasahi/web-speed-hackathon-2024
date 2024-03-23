@@ -125,7 +125,7 @@ const BookDetailPage: React.FC = () => {
 
 const BookDetailPageWithSuspense: React.FC = () => {
   return (
-    <Suspense fallback={null}>
+    <Suspense fallback={<div>loading</div>}>
       <BookDetailPage />
     </Suspense>
   );
