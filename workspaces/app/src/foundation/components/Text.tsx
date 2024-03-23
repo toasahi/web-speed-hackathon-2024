@@ -1,12 +1,12 @@
-import type * as CSS from 'csstype';
+import type {Property} from 'csstype';
 import styled from 'styled-components';
 
 import type { Color, Typography } from '../styles/variables';
 
 const _Text = styled.span<{
   $color: string;
-  $flexGrow?: CSS.Property.FlexGrow;
-  $flexShrink?: CSS.Property.FlexShrink;
+  $flexGrow?: Property.FlexGrow;
+  $flexShrink?: Property.FlexShrink;
   $typography: string;
   $weight: string;
 }>`
@@ -21,8 +21,8 @@ type Props = {
   as?: keyof JSX.IntrinsicElements;
   children: React.ReactNode;
   color: Color;
-  flexGrow?: CSS.Property.FlexGrow;
-  flexShrink?: CSS.Property.FlexShrink;
+  flexGrow?: Property.FlexGrow;
+  flexShrink?: Property.FlexShrink;
   id?: string;
   typography: Typography;
   weight?: 'bold' | 'normal';
