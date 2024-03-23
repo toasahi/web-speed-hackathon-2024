@@ -29,7 +29,7 @@ type Props = {
   weight?: 'bold' | 'normal';
 };
 
-export const Text: React.FC<Props> = memo(({
+export const Text: React.FC<Props> = ({
   as,
   children,
   color,
@@ -52,4 +52,4 @@ export const Text: React.FC<Props> = memo(({
       {children}
     </_Text>
   );
-});
+};

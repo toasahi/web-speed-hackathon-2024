@@ -2,7 +2,6 @@ import type * as CSS from 'csstype';
 import styled from 'styled-components';
 
 import { addUnitIfNeeded } from '../../lib/css/addUnitIfNeeded';
-import { memo } from 'react';
 
 const _Image = styled.img<{
   $height: number | string;
@@ -21,6 +20,6 @@ type Props = {
   width: number | string;
 } & JSX.IntrinsicElements['img'];
 
-export const Image: React.FC<Props> = memo(({ height, loading = 'eager', objectFit, width, ...rest }) => {
+export const Image: React.FC<Props> = ({ height, loading = 'eager', objectFit, width, ...rest }) => {
   return <_Image {...rest} $height={height} $objectFit={objectFit} $width={width} loading={loading} />;
-});
+};
