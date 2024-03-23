@@ -1,5 +1,5 @@
 import styled from 'styled-components';
-import {Search} from '@mui/icons-material';
+import { Search } from '@mui/icons-material';
 
 import { Link } from '../../../foundation/components/Link';
 import { Text } from '../../../foundation/components/Text';
@@ -34,7 +34,7 @@ export const CoverSection: React.FC = () => {
     <_Wrapper>
       <HeroImage />
       <_SearchLink href="/search">
-        <Search style={{color:Color.MONO_A,height:24,width:24}} />
+        <Search style={{ color: Color.MONO_A, height: 24, width: 24 }} />
         <Text color={Color.MONO_A} typography={Typography.NORMAL16}>
           検索
         </Text>

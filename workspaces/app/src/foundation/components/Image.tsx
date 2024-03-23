@@ -1,4 +1,4 @@
-import type {Property} from 'csstype';
+import type { Property } from 'csstype';
 import styled from 'styled-components';
 
 import { addUnitIfNeeded } from '../../lib/css/addUnitIfNeeded';

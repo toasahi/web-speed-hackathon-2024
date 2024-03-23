@@ -1,4 +1,4 @@
-import type {Property} from 'csstype';
+import type { Property } from 'csstype';
 import styled from 'styled-components';
 
 import type { Color, Typography } from '../styles/variables';

@@ -14,7 +14,7 @@ const main = async () => {
   await registerServiceWorker();
   await preloadImages();
 
-  const fn = () =>{
+  const fn = () => {
     if (window.location.pathname.startsWith('/admin')) {
       ReactDOM.createRoot(document.getElementById('root')!).render(<AdminApp />);
     } else {
@@ -27,14 +27,13 @@ const main = async () => {
         </SWRConfig>,
       );
     }
+  };
+
+  if (document.readyState !== 'loading') {
+    fn();
+  } else {
+    document.addEventListener('DOMContentLoaded', fn);
   }
-
-
-if (document.readyState !== 'loading') {
-  fn();
-} else {
-  document.addEventListener('DOMContentLoaded', fn);
-}
 };
 
 main().catch(console.error);

@@ -1,7 +1,7 @@
 import React from 'react';
 import { Route, Routes } from 'react-router-dom';
 import { styled } from 'styled-components';
-import {ArrowBack} from '@mui/icons-material';
+import { ArrowBack } from '@mui/icons-material';
 
 import { Link } from './foundation/components/Link';
 import { Text } from './foundation/components/Text';
@@ -34,7 +34,7 @@ export const Router: React.FC = () => {
           <ActionLayout
             leftContent={
               <_BackToTopButton href={'/'}>
-                <ArrowBack style={{color:Color.MONO_100,height:32,width:32}} />
+                <ArrowBack style={{ color: Color.MONO_100, height: 32, width: 32 }} />
                 <Text color={Color.MONO_100} typography={Typography.NORMAL16} weight="bold">
                   トップへ戻る
                 </Text>

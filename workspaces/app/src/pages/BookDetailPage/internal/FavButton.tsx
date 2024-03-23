@@ -1,5 +1,5 @@
 import styled from 'styled-components';
-import {Favorite,FavoriteBorder} from '@mui/icons-material';
+import { Favorite, FavoriteBorder } from '@mui/icons-material';
 
 import { Color, Space } from '../../../foundation/styles/variables';
 
@@ -28,7 +28,11 @@ export const FavButton: React.FC<Props> = ({ enabled, onClick }) => {
       aria-label={enabled ? 'お気に入りを解除する' : 'お気に入りに追加する'}
       onClick={onClick}
     >
-      {enabled ? <Favorite style={{color:Color.Favorite,height:24,width:24}} /> : <FavoriteBorder style={{color:Color.MONO_40,height:24,width:24}} />}
+      {enabled ? (
+        <Favorite style={{ color: Color.Favorite, height: 24, width: 24 }} />
+      ) : (
+        <FavoriteBorder style={{ color: Color.MONO_40, height: 24, width: 24 }} />
+      )}
     </_Button>
   );
 };

@@ -1,6 +1,6 @@
 import { Suspense } from 'react';
 import styled from 'styled-components';
-import {NavigateNext} from '@mui/icons-material';
+import { NavigateNext } from '@mui/icons-material';
 
 import { Box } from '../../../foundation/components/Box';
 import { Flex } from '../../../foundation/components/Flex';
@@ -92,7 +92,7 @@ const RankingCard: React.FC<Props> = ({ bookId }) => {
               <Text color={Color.Secondary} typography={Typography.NORMAL14} weight="bold">
                 この漫画を読む
               </Text>
-              <NavigateNext style={{color:Color.Secondary,height:32,width:32}} />
+              <NavigateNext style={{ color: Color.Secondary, height: 32, width: 32 }} />
             </Flex>
           </Box>
         </Flex>

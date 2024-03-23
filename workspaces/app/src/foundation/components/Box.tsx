@@ -1,4 +1,4 @@
-import type {Property} from 'csstype';
+import type { Property } from 'csstype';
 import { type AriaAttributes } from 'react';
 import styled from 'styled-components';
 
