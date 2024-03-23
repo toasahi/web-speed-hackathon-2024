@@ -1,5 +1,4 @@
 import type * as CSS from 'csstype';
-import React, { memo } from 'react';
 import styled from 'styled-components';
 
 import type { Color, Typography } from '../styles/variables';

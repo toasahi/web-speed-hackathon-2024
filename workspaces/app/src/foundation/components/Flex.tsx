@@ -2,7 +2,6 @@ import type * as CSS from 'csstype';
 import styled from 'styled-components';
 
 import { addUnitIfNeeded } from '../../lib/css/addUnitIfNeeded';
-import { memo } from 'react';
 
 const _Flex = styled.div<{
   $align?: string;
@@ -53,7 +52,7 @@ type Props = {
   py?: number;
 };
 
-export const Flex: React.FC<Props> = memo(({
+export const Flex: React.FC<Props> = ({
   align,
   as,
   children,
@@ -92,4 +91,4 @@ export const Flex: React.FC<Props> = memo(({
       {children}
     </_Flex>
   );
-});
+};

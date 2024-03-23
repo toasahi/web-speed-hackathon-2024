@@ -1,14 +1,13 @@
-import { memo } from "react";
 
 type Props = {
   children: React.ReactNode;
   to?: string;
 } & JSX.IntrinsicElements['a'];
 
-export const Link: React.FC<Props> = memo(({ children, to, ...rest }) => {
+export const Link: React.FC<Props> = ({ children, to, ...rest }) => {
   return (
     <a href={to} {...rest}>
       {children}
     </a>
   );
-});
+};

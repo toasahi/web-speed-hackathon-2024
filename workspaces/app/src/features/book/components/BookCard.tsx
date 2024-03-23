@@ -1,5 +1,6 @@
 import { Suspense } from 'react';
 import { styled } from 'styled-components';
+// import { style } from '@vanilla-extract/css';
 
 import { Flex } from '../../../foundation/components/Flex';
 import { Image } from '../../../foundation/components/Image';
